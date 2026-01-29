@@ -56,7 +56,7 @@ jobs:
           tag_name: ${{ steps.check_version.outputs.latest_version }}
 
   job_build_argon:
-    name: Build Argon (master)
+    name: Build Kucat (master)
     needs: job_check
     if: needs.job_check.outputs.has_update == 'true'
     runs-on: ubuntu-latest
